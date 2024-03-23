@@ -1,0 +1,14 @@
+.div-proyects-layers {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .div-trucho {
+        width: 20rem;
+        height: 15rem;
+        margin: 2rem;
+        background-color: lightblue;
+    }
+}

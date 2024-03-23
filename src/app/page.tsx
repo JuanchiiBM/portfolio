@@ -25,6 +25,7 @@ const Home = () => {
             <Icons></Icons>
             <div className='div-proyects'>
                 <h1>Proyectos mas relevantes</h1>
+                <Proyects></Proyects>
                 <p>Mostrar más...</p>
             </div>      
         </main>

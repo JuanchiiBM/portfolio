@@ -88,7 +88,16 @@
             text-align: center;
             color: white;
             font-weight: 100;
-            margin: 0;
+            font-size: 2.5vw;
+            margin: 0 0 4rem 0;
+        }
+
+        p {
+            color: rgb(255, 255, 255, 0.5);
+            font-size: 1.5vw;
+            width: auto;
+            text-align: start;
+            margin: 2rem 0rem 6rem 10rem;
         }
     }
 }

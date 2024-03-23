@@ -5,10 +5,13 @@ import { useRef } from 'react';
 
 const Icons = () => {
     const icons = useRef<HTMLDivElement>(null);
-
-    const iconsAnimation = (e: MouseEvent) => {
-        const xCursor = e.clientX;
-        const yCursor = e.clientY;
+    let xCursor: number;
+    let yCursor: number;
+    window.addEventListener('mousemove', (e:MouseEvent) => {
+        xCursor = e.clientX;
+        yCursor = e.clientY;
+    });
+    const iconsAnimation = () => {
         const yScroll = window.scrollY;
 
         //reactIcon
@@ -38,7 +41,7 @@ const Icons = () => {
         sassIcon.style.backgroundImage = `radial-gradient(circle at ${xCursor - (xSass ? xSass : 0)}px ${yCursor + yScroll - (ySass ? ySass : 0)}px, rgb(216, 112, 147) 0%, white 30vw)`;
     }
     window.addEventListener('mousemove',iconsAnimation);
-    window.addEventListener('mousedown',iconsAnimation);
+    window.addEventListener('scroll', iconsAnimation);
 
     return (
         <div ref={icons} className='div-tecnologys'>
