@@ -1,0 +1,22 @@
+.div-tecnologys {
+    height: 30vw;
+    width: calc(100% - 8rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    i {
+        background-clip: text;
+        color:transparent;
+        background-color: white;
+        background-size: 100vw 100vh;
+        font-size: 5vw;
+        transition: all 0.2s ease;
+        padding: 2vw;
+
+        &:hover {
+            transition: all 0.2s ease;
+            scale: 1.2;
+        }
+    }
+}
