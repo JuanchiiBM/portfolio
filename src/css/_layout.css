@@ -1,0 +1,21 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    background-color: rgb(19, 9, 37);
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgb(12, 5, 24);
+        border-radius: 20px;
+    }
+}
