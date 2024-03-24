@@ -8,7 +8,8 @@
     .div-trucho {
         width: 20rem;
         height: 15rem;
+        border-radius: 15px;
         margin: 2rem;
-        background-color: lightblue;
+        background-color: rgba(173, 216, 230, 0.251);
     }
 }
