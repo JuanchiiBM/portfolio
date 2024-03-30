@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-evenly;
 
-    i, .svg {
+    i {
         background-clip: text;
         color:transparent;
         background-color: white;
@@ -13,6 +13,7 @@
         font-size: 5vw;
         transition: all 0.2s ease;
         padding: 2vw;
+        clip-path: circle(37%);
 
         &:hover {
             transition: all 0.2s ease;
@@ -20,8 +21,3 @@
         }
     }
 }
-
-.icon-dot-net:before {
-    content: "\e900";
-    color: #5c2d91;
-  }
